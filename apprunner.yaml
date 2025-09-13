@@ -1,0 +1,8 @@
+version: 1.0
+build:
+  image: open-webui-image
+  docker:
+    dockerfile: Dockerfile
+run:
+  command: /usr/bin/tini -- start.sh
+  port: 8080
