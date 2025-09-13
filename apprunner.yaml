@@ -2,5 +2,3 @@ version: 1.0
 run:
   command: /usr/bin/tini -- start.sh
   port: 8080
-  network:
-    port: 8080
