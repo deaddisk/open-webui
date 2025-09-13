@@ -1,4 +1,10 @@
 version: 1.0
+build:
+  # This section is REQUIRED for source code deployments.
+  # It tells App Runner to use the Dockerfile in the root directory.
+  docker:
+    dockerfile: Dockerfile
 run:
+  # This section tells App Runner how to run the container after it's built.
   command: /usr/bin/tini -- start.sh
   port: 8080
